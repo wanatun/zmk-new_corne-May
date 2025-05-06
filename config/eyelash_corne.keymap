@@ -26,6 +26,8 @@
     trigger-period-ms = <16>;
 };
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     behaviors {
         td0: td0 {
