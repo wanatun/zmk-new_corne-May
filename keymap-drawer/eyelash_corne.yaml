@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '-', s: _}
+  - {t: '-', h: SYMBOL, s: _}
   - '&td1'
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -111,13 +111,13 @@ layers:
   - '*'
   - (
   - )
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -128,7 +128,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
+  - BT CLR ALL
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
