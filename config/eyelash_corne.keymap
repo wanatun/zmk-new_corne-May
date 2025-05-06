@@ -191,10 +191,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC         &kp Q               &kp W           &kp E             &kp R       &kp T                               &kp UP                &mt LS(TAB) Y  &kp U            &kp I             &kp O           &kp P                  &kp MINUS
-&td1            &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCMD F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &mt TAB H      &mt LCMD J       &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_CONTROL SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C             &kp V       &lt 2 B     &kp C_MUTE              &kp DOWN              &kp N          &kp M            &kp COMMA         &kp DOT         &kp FSLH               &kp LEFT_ALT
-                                                    &kp LGUI          &kp ENTER   &kp DELETE                                                &lt 1 SPACE    &lt 3 BACKSPACE  &mo 2
+&kp ESC         &kp Q               &kp W           &kp E             &kp R       &kp T                               &kp UP                &mt LS(TAB) Y  &kp U        &kp I             &kp O           &kp P                  &kp MINUS
+&td1            &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCMD F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &mt TAB H      &mt LCMD J   &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_CONTROL SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z               &kp X           &kp C             &kp V       &lt 2 B     &kp C_MUTE              &kp DOWN              &kp N          &kp M        &kp COMMA         &kp DOT         &kp FSLH               &kp LEFT_ALT
+                                                    &kp LGUI          &kp ENTER   &kp DELETE                                                &mo 1          &lt 3 SPACE  &lt 2 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
