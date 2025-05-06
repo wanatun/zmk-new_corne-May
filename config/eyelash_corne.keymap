@@ -203,10 +203,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1          &kp N2    &kp N3        &kp N4     &kp N5                                      &mmv MOVE_UP                     &kp N6                &kp N7     &kp N8    &kp N9     &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp RCLK             &kp LEFT   &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
-&M15    &M12            &M0       &kp DOWN      &M11       &M10          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NON_US_BACKSLASH  &kp GRAVE  &kp DOWN  &kp EQUAL  &kp END   &kp PG_DN
-                                  &trans        &trans     &trans                                                                       &kp INS               &kp DEL    &trans
+&trans  &kp N1  &kp N2    &kp N3        &kp N4     &kp N5                                &mmv MOVE_UP                     &kp N6                &kp N7     &kp N8    &kp N9     &kp N0    &kp BSPC
+&trans  &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mkp RCLK             &kp LEFT   &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
+&M15    &M12    &M0       &kp DOWN      &M11       &M10    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NON_US_BACKSLASH  &kp GRAVE  &kp DOWN  &kp EQUAL  &kp END   &kp PG_DN
+                          &trans        &trans     &trans                                                                 &kp INS               &kp DEL    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
