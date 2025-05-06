@@ -191,7 +191,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC         &kp Q               &kp W           &kp E             &kp R       &kp T                               &kp UP                &mt LS(TAB) Y  &kp U        &kp I             &kp O           &kp P                  &kp MINUS
+&kp ESC         &kp Q               &kp W           &kp E             &kp R       &kp T                               &kp UP                &mt LS(TAB) Y  &kp U        &kp I             &kp O           &kp P                  &lt 4 MINUS
 &td1            &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCMD F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &mt TAB H      &mt LCMD J   &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_CONTROL SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z               &kp X           &kp C             &kp V       &lt 2 B     &kp C_MUTE              &kp DOWN              &kp N          &kp M        &kp COMMA         &kp DOT         &kp FSLH               &kp LEFT_ALT
                                                     &kp LGUI          &kp ENTER   &kp DELETE                                                &mo 1          &lt 3 SPACE  &lt 2 BACKSPACE
@@ -215,13 +215,13 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL        &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET  &kp AMPS  &kp ASTRK         &kp LPAR           &kp RPAR              &kp BSPC
-&trans  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &M8        &M7       &kp MINUS         &kp EQUAL          &kp BSLH              &kp GRAVE
-&trans  &bt BT_CLR_ALL  &out OUT_BLE  &none         &none         &mkp MB5      &trans                    &mmv MOVE_DOWN                   &kp UNDER  &M9       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp TILDE
-                                      &trans        &trans        &kp SPACE                                                                &kp RET    &trans    &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS  &kp ASTRK         &kp LPAR           &kp RPAR              &kp BSPC
+&trans  &trans    &trans  &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &M8        &M7       &kp MINUS         &kp EQUAL          &kp BSLH              &kp GRAVE
+&trans  &trans    &trans  &none     &none     &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &M9       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp TILDE
+                          &trans    &trans    &kp SPACE                                                             &kp RET    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         layer_3 {
@@ -239,10 +239,10 @@
         layer_4 {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &kp EXCL        &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                               &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &bt BT_CLR_ALL  &out OUT_BLE  &none         &none         &mkp MB5      &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                      &trans        &trans        &kp SPACE                                                                &kp RET    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
