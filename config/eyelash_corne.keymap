@@ -245,7 +245,7 @@
                                       &trans        &trans        &kp SPACE                                                                &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT) LG(RIGHT)>;
         };
     };
 };
